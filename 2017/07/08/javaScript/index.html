@@ -5,16 +5,16 @@
   
   <title>JS总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JS总结">
+  <meta name="description" content="JS是什么？JS是一门弱类型的脚本语言，是一门解释性语言，运行在客户端浏览器上的语言，容易被篡改，所以安全性比较低。 JS的组成由ECMAScript、DOM、BOM组成的。  ECMAScript是JS的规范文档，里面规定了一些JS的数据类型，基本操作语句、命名规范、变量、关键字、保留字等… DOM是文档对象模型，操作html文件中所有元素内容。 BOM是浏览器对象模型，操作window对象，w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS总结">
 <meta property="og:url" content="http://yoursite.com/2017/07/08/javaScript/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JS总结">
-<meta property="og:updated_time" content="2017-07-08T01:04:58.555Z">
+<meta property="og:description" content="JS是什么？JS是一门弱类型的脚本语言，是一门解释性语言，运行在客户端浏览器上的语言，容易被篡改，所以安全性比较低。 JS的组成由ECMAScript、DOM、BOM组成的。  ECMAScript是JS的规范文档，里面规定了一些JS的数据类型，基本操作语句、命名规范、变量、关键字、保留字等… DOM是文档对象模型，操作html文件中所有元素内容。 BOM是浏览器对象模型，操作window对象，w">
+<meta property="og:updated_time" content="2017-07-08T01:12:15.417Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS总结">
-<meta name="twitter:description" content="JS总结">
+<meta name="twitter:description" content="JS是什么？JS是一门弱类型的脚本语言，是一门解释性语言，运行在客户端浏览器上的语言，容易被篡改，所以安全性比较低。 JS的组成由ECMAScript、DOM、BOM组成的。  ECMAScript是JS的规范文档，里面规定了一些JS的数据类型，基本操作语句、命名规范、变量、关键字、保留字等… DOM是文档对象模型，操作html文件中所有元素内容。 BOM是浏览器对象模型，操作window对象，w">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -54,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -66,7 +66,7 @@
         <section id="main"><article id="post-javaScript" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/08/javaScript/" class="article-date">
-  <time datetime="2017-07-08T01:04:58.555Z" itemprop="datePublished">2017-07-08</time>
+  <time datetime="2017-07-08T01:12:15.417Z" itemprop="datePublished">2017-07-08</time>
 </a>
     
   </div>
@@ -85,11 +85,627 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="JS总结"><a href="#JS总结" class="headerlink" title="JS总结"></a>JS总结</h2>
+        <h2 id="JS是什么？"><a href="#JS是什么？" class="headerlink" title="JS是什么？"></a>JS是什么？</h2><p>JS是一门弱类型的脚本语言，是一门<strong>解释性</strong>语言，运行在客户端浏览器上的语言，容易被篡改，所以安全性比较低。</p>
+<h2 id="JS的组成"><a href="#JS的组成" class="headerlink" title="JS的组成"></a>JS的组成</h2><p>由ECMAScript、DOM、BOM组成的。</p>
+<ul>
+<li>ECMAScript是JS的规范文档，里面规定了一些JS的数据类型，基本操作语句、命名规范、变量、关键字、保留字等…</li>
+<li>DOM是文档对象模型，操作html文件中所有元素内容。</li>
+<li>BOM是浏览器对象模型，操作window对象，window是浏览器的顶层对象。</li>
+</ul>
+<h2 id="JS的引入方式"><a href="#JS的引入方式" class="headerlink" title="JS的引入方式"></a>JS的引入方式</h2><h3 id="1-行内式"><a href="#1-行内式" class="headerlink" title="1.行内式"></a>1.行内式</h3><p>将JS代码块直接写在标签内。</p>
+<h3 id="2-内嵌式"><a href="#2-内嵌式" class="headerlink" title="2.内嵌式"></a>2.内嵌式</h3><p>将JS代码块写在<script>代码块</script>中，放在html文件中。</p>
+<h3 id="3-外联式"><a href="#3-外联式" class="headerlink" title="3.外联式"></a>3.外联式</h3><p>通过<script src="index.js"></script>引入一个外部JS文件，注意外联式元素内写的代码块不会生效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;link.js&quot; type=&quot;text/javascript&quot;&gt;document.write(&apos;&lt;h1&gt;&lt;/h1&gt;&apos;);&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="js的命名规范"><a href="#js的命名规范" class="headerlink" title="js的命名规范"></a>js的命名规范</h2><ul>
+<li>严格区分大小写</li>
+<li>命名时名称中可以出现字母，数字，下划线，$,但是数字不能为首位</li>
+<li>推荐使用驼峰命令法</li>
+<li>不能使用ECMAScript中规定的关键字和保留字(除了关键字和保留字，top也尽量不使用)</li>
+<li>变量命名时推荐使用匈牙利命名类型</li>
+</ul>
+<h2 id="JS的变量"><a href="#JS的变量" class="headerlink" title="JS的变量"></a>JS的变量</h2><p>变量是用来存储信息的容器，由于JS是松散数据类型，所以变量中可以放置任何的数据类型。</p>
+<h3 id="创建变量语法"><a href="#创建变量语法" class="headerlink" title="创建变量语法"></a>创建变量语法</h3><blockquote>
+<p>声明 变量名；</p>
+</blockquote>
+<ul>
+<li>此时这个变量中什么都没有，获取变量中的值时，返回值undefined</li>
+<li>一条声明可以有多个变量，每一个变量用逗号隔开。</li>
+</ul>
+<h2 id="JS的数据类型"><a href="#JS的数据类型" class="headerlink" title="JS的数据类型"></a>JS的数据类型</h2><p>数据类型包括基本数据类型和引用数据类型。</p>
+<ul>
+<li>基本数据类型：Number、String、Boolean、undefined、null</li>
+<li>引用数据类型：function、对象数据类型<ul>
+<li>对象数据类型:Array、RegExp、Object</li>
+</ul>
+</li>
+</ul>
+<h3 id="基本数据类型与引用数据类型的区别"><a href="#基本数据类型与引用数据类型的区别" class="headerlink" title="基本数据类型与引用数据类型的区别"></a>基本数据类型与引用数据类型的区别</h3><p>基本数据类型直接对值进行操作；引用数据类型操作的内存地址。<br>引用数据类型操作步骤如下：</p>
+<ol>
+<li>浏览器提供给代码运行的环境，代码在这里从上到下执行；</li>
+<li>当遇到引用数据类型时，浏览器会开辟一个新的内存地址，将引用数据类型中的代码当做字符串存到这个里面；</li>
+<li>开辟的空间会返回给对象一个地址，那么此时这个对象存储的不是代码而是一个地址；</li>
+<li>当将这个对象赋值给另一个对象的时候，其实赋值过程是将地址传递给另一个对象，也就是说这两个对象将要访问同一个地址，即他们操作的是同一份代码。</li>
+</ol>
+<blockquote>
+<p>数据类型之间的比较</p>
+<ul>
+<li>对象==对象  false</li>
+<li>对象==字符串 对象转为字符串</li>
+<li>对象==数字  对象转为字符串 字符串转为数字</li>
+<li>对象==布尔  都转为数字</li>
+<li>字符串==数字 字符串转为数字</li>
+<li>字符串==布尔 都转为数字</li>
+<li>数字==布尔 布尔转为数字</li>
+<li>null==undefined true</li>
+<li>null===undefined false</li>
+<li>NaN==NaN false</li>
+</ul>
+</blockquote>
+<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><h4 id="数字数据类型Number"><a href="#数字数据类型Number" class="headerlink" title="数字数据类型Number"></a>数字数据类型Number</h4><p>包括整数（正整数，0，负整数），小数，NaN</p>
+<h5 id="1-Number-value"><a href="#1-Number-value" class="headerlink" title="1.Number(value)"></a>1.Number(value)</h5><p>这种方法是强制转化，只要要转化的对象中有一个内容不是数字，那就就会返回NaN</p>
+<ul>
+<li>应用场景：将其他数据类型转化为数字数据类型</li>
+<li>返回值：数字或者NaN</li>
+<li>机制：<ul>
+<li>如果转化的是字符串，直接调用Number()方法将字符串转化为数字，如果字符串中有一项不是数字返回NaN</li>
+<li>如果转化的是对象数据类型，先调用.toString()方法，将数组中的内容转化为字符串，再用上一条规则转化为数字。</li>
+<li>如果转化的是布尔类型，true-&gt;1,false-&gt;0</li>
+<li>null-&gt;0</li>
+<li>undefined-&gt;NaN</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-parseFloat-value"><a href="#2-parseFloat-value" class="headerlink" title="2.parseFloat(value)"></a>2.parseFloat(value)</h5><ul>
+<li>应用场景：将字符串转化为数字（可转化为浮点数）。</li>
+<li>机制：将值从左到右一次查找，遇到第一个非有效数字停止查找，将之前的值返回。</li>
+<li>返回值：数字或NaN</li>
+</ul>
+<h5 id="3-parseInt-value"><a href="#3-parseInt-value" class="headerlink" title="3.parseInt(value)"></a>3.parseInt(value)</h5><ul>
+<li>应用场景：将字符串转化为一个整数。</li>
+<li>机制：将值从左到右查找，找到第一个非有效整数停止，将查找到的值返回。</li>
+<li>返回值：数字或NaN</li>
+</ul>
+<h5 id="isNaN-value"><a href="#isNaN-value" class="headerlink" title="isNaN(value)"></a>isNaN(value)</h5><ul>
+<li>应用场景：判断一个数不是数字</li>
+<li>返回值：不是数字的时候返回true,是数字的时候返回false</li>
+<li>机制：isNaN在判断之前会先将非数字数据类型的值，调用Number()方法，将其转化为数字数据类型，如果Number()转化结构为NaN的时候，isNaN()返回true,反之false</li>
+</ul>
+<h4 id="字符串String"><a href="#字符串String" class="headerlink" title="字符串String"></a>字符串String</h4><p>是用来存储字符的变量，字符串在JS中没有任何意义。</p>
+<h5 id="字符串的拼接"><a href="#字符串的拼接" class="headerlink" title="字符串的拼接"></a>字符串的拼接</h5><p>在JS中其他数据类型+=一个字符串的话，全部会变成字符串。</p>
+<h5 id="字符串的方法"><a href="#字符串的方法" class="headerlink" title="字符串的方法"></a>字符串的方法</h5><ul>
+<li>charAt/charCodeAt(‘索引’)：根据索引获取指定位置的字符（或者字符的Unicode编码值）</li>
+<li><p>String.fromCharCode([Unicode编码])：通过指定的编码获取对应的字符。</p>
+</li>
+<li><p>substr(n,m)：从索引n开始截取m个字符（m不写截取到末尾），n和m不支持负数。</p>
+</li>
+<li>substring(n,m)：从索引n开始找到索引为m处（不包含m），n和m不支持负数。</li>
+<li><p>slice(n,m)：和 substring一样，只是可以支持以负数作为索引（负索引：总长度+负索引，得到的结果就是查找的索引位置）</p>
+</li>
+<li><p>indexOf/lastIndexOf：找到字符在字符串中第一次或者最后一次出现位置的索引，如果没有这个字符返回的是-1（通过这也可以判断当前的字符串中是否包含这个字符）</p>
+</li>
+<li><p>search()：和indexOf相同，都是获取字符出现位置的索引，只是search支持正则</p>
+</li>
+<li><p>toUpperCase/toLowerCase：把一个字符串中所有字符转换成大写或者小写</p>
+</li>
+<li><p>split()：按照指定的分隔符，把一个字符串拆分成数组中的每一项，可以支持正则</p>
+</li>
+<li>replace():把字符串中的原有字符进行替换，在不使用正则的情况下，执行一次replace，只能替换一次，这个方法也可以支持正则</li>
+<li>match()：根据正则匹配到所有符合规则的结果，最后以一个数组来存储。</li>
+<li>localeCompare()：两个字符串之间的比较，按照每一个字符的Unicode编码值进行比较</li>
+<li>trim/trimLeft/trimRight()：去除字符串的首尾空格（trimLeft去除首空格/trimRight去除尾空格），不兼容</li>
+</ul>
+<h4 id="Boolean-value"><a href="#Boolean-value" class="headerlink" title="Boolean(value)"></a>Boolean(value)</h4><ul>
+<li>判断一个值是真是假</li>
+<li>返回值：true或false</li>
+<li>机制：先将！后面的值调用Boolean()方法转化为布尔类型后，再取反。</li>
+<li>在JS中，只有0 ‘’ null undefined NaN为假，其余都为真。</li>
+<li>！=&gt;取反</li>
+<li>！！=&gt;将其它数据类型转化为布尔类型（取反再取反），和Boolean()方法得到的值相同。</li>
+</ul>
+<h4 id="null"><a href="#null" class="headerlink" title="null"></a>null</h4><p>现在预留位置为空，之后再添加值。</p>
+<h4 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h4><p>未定义</p>
+<h3 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h3><h4 id="对象类Object"><a href="#对象类Object" class="headerlink" title="对象类Object"></a>对象类Object</h4><p>由键值对组成，这些键值对是用来描述这个对象的，每一对键值对之间用逗号隔开，键值对由属性名和属性值组成key:value</p>
+<h5 id="对象的属性"><a href="#对象的属性" class="headerlink" title="对象的属性"></a>对象的属性</h5><p>对象的属性是用来描述对象的，还可以存储值。注意对象的属性名可以为数字。</p>
+<ul>
+<li>内置属性：对象天生自带的</li>
+<li>自定义属性：人为定义的<blockquote>
+<p>JS中用来储存值的方式共有两种：变量、属性。</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="访问对象的方式"><a href="#访问对象的方式" class="headerlink" title="访问对象的方式"></a>访问对象的方式</h5><ul>
+<li>对象名.属性名</li>
+<li>对象名[‘属性名’]</li>
+</ul>
+<h5 id="增加属性的方式"><a href="#增加属性的方式" class="headerlink" title="增加属性的方式"></a>增加属性的方式</h5><p>自定义属性的过程，需要增加属性名和属性值。</p>
+<ul>
+<li>对象名.新的属性名=属性值；</li>
+<li>对象名[‘新的属性名’]=属性值</li>
+</ul>
+<h5 id="删除属性的方式"><a href="#删除属性的方式" class="headerlink" title="删除属性的方式"></a>删除属性的方式</h5><ul>
+<li>delete 对象名.属性名</li>
+<li>delete 对象名[属性名]</li>
+</ul>
+<h5 id="修改属性值的方式"><a href="#修改属性值的方式" class="headerlink" title="修改属性值的方式"></a>修改属性值的方式</h5><p>就是将之前有的属性名里面的属性值重新赋值</p>
+<ul>
+<li>对象名.属性名=新的属性值</li>
+<li>对象名[‘属性名’]=新的属性值</li>
+</ul>
+<blockquote>
+<p>注意：</p>
+<ol>
+<li>对象的属性名可以为数字。</li>
+<li>当属性名为数字的时候，获取属性的方式为：对象名[‘属性名’]，这个方法，属性名为数字的时候可以省略引号，其他属性名省略引号，系统默认这个属性名为变量。</li>
+</ol>
+</blockquote>
+<h3 id="数据类型检测"><a href="#数据类型检测" class="headerlink" title="数据类型检测"></a>数据类型检测</h3><ol>
+<li>typeof检测出来的东西，都是字符串，字符串里面包裹的才是数据真正的类型。</li>
+<li>constructor：函数，通过函数名来判断数据类型</li>
+<li>instanceof ：</li>
+<li>Object.prototype.toString.call()</li>
+</ol>
+<h4 id="Function类"><a href="#Function类" class="headerlink" title="Function类"></a>Function类</h4><ul>
+<li>所有的函数都是Function的一个实例。Function.prototype是函数数据类型的值，但是相关操作和之前的一模一样。</li>
+<li>函数本身也会有一些自己的属性：<ul>
+<li>length:0 形参的个数</li>
+<li>name:Fn函数名</li>
+<li>prototype 类的原型，在原型上定义的方法都是当前Fn这个类实例的共有方法</li>
+<li><em> </em> proto<em> </em> 把函数当做一个普通函数对象，指向Function这个类的原型</li>
+</ul>
+</li>
+</ul>
+<h2 id="Math方法"><a href="#Math方法" class="headerlink" title="Math方法"></a>Math方法</h2><ul>
+<li>Math.abs() 取绝对值</li>
+<li>Math.ceil()向上取整 （出现小数点就向上＋1</li>
+<li>Math.floor()向下取整</li>
+<li>Math.round()四舍五入</li>
+<li>Math.max(val1,val2,val3…)取最大值</li>
+<li>Math.min(val1,val2,val3…)取最小值</li>
+<li>Math.random()获取[0-1)之间的随机小数（不包含1）</li>
+<li>Math.round(Math.random()*(m-n)+n) 获取任意两个数之间的随机数<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h4 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h4></li>
+<li>功能：存放实参的参数列表</li>
+<li>特性：<ul>
+<li>仅在函数体内使用；</li>
+<li>带有下标属性，但并非数组；</li>
+<li>函数声明时自动初始化</li>
+</ul>
+</li>
+<li>属性：<ul>
+<li>length 获取函数实参的长度</li>
+<li>callee 返回当前正在指向的函数</li>
+<li>caler 返回调用当前正在执行函数的函数名</li>
+</ul>
+</li>
+</ul>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p> 变量分为全局变量和私有变量。</p>
+<ul>
+<li>私有作用域：函数执行时将函数里的JS代码加载运行，也需要一个供函数里JS代码执行的环境，就是私有作用域。</li>
+<li>全局作用域：浏览器加载html时候，会提供一个供JS代码执行的环境window</li>
+<li>私有变量：就是在私有作用域中声明的变量，包括形参和预解释的变量</li>
+<li>全局变量：就是在全局作用域中声明的变量。私有作用域中不带var的变量也是全局变量。</li>
+<li>全局属性：在全局作用域中声明的变量，不仅是全局变量，也是给全局添加一个属性。</li>
+</ul>
+<h4 id="预解释（变量提升）"><a href="#预解释（变量提升）" class="headerlink" title="预解释（变量提升）"></a>预解释（变量提升）</h4><p>浏览器加载html时候，会提供一个共JS代码执行的环境=&gt;全局作用域window</p>
+<ol>
+<li>预解释是针对于<strong>当前作用域</strong>，只发生在当前作用域中。首先开始对window进行预解释，函数执行的时候会形成一个私有的作用域，然后函数执行的时候也会进行预解释。</li>
+<li>JS代码执行之前，把所有带var和带function关键字提前进行声明或定义。预解释完成后，代码自上而下开始执行。</li>
+</ol>
+<ul>
+<li>通过var声明的时候，会给变量赋值一个默认值undefined，预解释的时候带var只声明不定义。</li>
+<li>带function预解释的时候声明加定义。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">console.log(num); // undefined =&gt; 打印并没有报错，说明   num已经被声明过。</div><div class="line">console.log(sum); // 函数体 =&gt; 说明赋值也结束了</div><div class="line">var num = 5;</div><div class="line">function sum(num1,num2) &#123;</div><div class="line">     arguments; // []</div><div class="line">     return;</div><div class="line">     console.log(num1);</div><div class="line">     console.log(&apos;sum&apos;);</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>函数执行过程：</li>
+</ol>
+<ul>
+<li>给形参赋值</li>
+<li>进行预解释</li>
+<li>自上而下执行</li>
+</ul>
+<h4 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h4><p>在私有作用域中遇到一个变量，首先看是不是形参或者有没有在<strong>当前作用域</strong>预解释的时候声明过，如果没有声明过也不是形参，就会去上级作用域查找，一直找到window为止。</p>
+<ul>
+<li>如何看上级作用域？就是看函数是在哪里定义的<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var n=9;</div><div class="line">var s=&quot;str&quot;</div><div class="line">function fn()&#123;</div><div class="line">    console.log(s);//输出str，查找上级作用域</div><div class="line">    n=7;</div><div class="line">    var n=6;</div><div class="line">    console.log(n);//输出6</div><div class="line">&#125;;</div><div class="line">fn();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="预解释的无节操机制"><a href="#预解释的无节操机制" class="headerlink" title="预解释的无节操机制"></a>预解释的无节操机制</h4><ol>
+<li><p>不管if条件是否成立都会进行预解释。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">console.log(num); // undefined</div><div class="line">if (false) &#123;</div><div class="line">    var num = 123;</div><div class="line">&#125;</div><div class="line">console.log(num); // undefined</div></pre></td></tr></table></figure>
+</li>
+<li><p>预解释的时候不会声明等号右边的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var fn = function () &#123;</div><div class="line">  console.log(&apos;function&apos;);</div><div class="line">&#125;;</div><div class="line">console.log(fn);</div><div class="line">fn();</div></pre></td></tr></table></figure>
+</li>
+<li><p>return 后面的代码虽然不执行但也要进行预解释，但是return右边不会进行预解释，因为它当做一个值返回出去。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function fn1() &#123;</div><div class="line">   console.log(fn);</div><div class="line">   return function fn()&#123;  // return 右边 不会进行预解释 因为是把它当做一个值返回出去；</div><div class="line">       console.log(&apos;fn&apos;);</div><div class="line">   &#125;;</div><div class="line">   var num = 123; // 虽然不执行但依然进行预解释</div><div class="line">&#125;</div><div class="line">fn1();</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h4><p>函数执行形成一个私有作用域，保护里面私有变量不受外界干扰的保护机制。</p>
+<ul>
+<li>形成闭包的前提条件是有函数执行。</li>
+<li>全局的不可以修改私有的。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//    (function () &#123;</div><div class="line"></div><div class="line">//    &#125;)();</div><div class="line">//   外界的面试官很多都认为只有形成一个不销毁的私有作用域才叫做闭包</div><div class="line">//    function fn() &#123;</div><div class="line">//        return function () &#123;</div><div class="line">//</div><div class="line">//        &#125;</div><div class="line">//    &#125;</div><div class="line">//    var f = fn();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="重复声明"><a href="#重复声明" class="headerlink" title="重复声明"></a>重复声明</h4><p>预解释重复时，带var不重复声明；带function不重复声明，但重复定义。</p>
+<h4 id="堆内存和栈内存释放"><a href="#堆内存和栈内存释放" class="headerlink" title="堆内存和栈内存释放"></a>堆内存和栈内存释放</h4><ul>
+<li>堆内存：用来存储引用数据类型的值。</li>
+<li>栈内存：供JS代码执行的环境。</li>
+</ul>
+<ol>
+<li>堆内存释放<br>浏览器默认机制，每间隔一段时间，会把那些没有被占用的内存回收。</li>
+<li>栈内存释放<br>window关闭浏览器的时候会销毁。<br>一般情况下函数执行形成私有作用域，执行完里面的代码就会立即销毁。</li>
+</ol>
+<ul>
+<li>形成不销毁栈内：在私有作用域中，返回一个引用数据类型，被外部接受，就不能被销毁。</li>
+<li>不立即销毁：如果返回的是一个函数数据类型，要等返回值执行完后，函数才能销毁</li>
+<li>不销毁：给元素绑定事件的时候也会涉及栈内存不销毁。</li>
+</ul>
+<h3 id="this"><a href="#this" class="headerlink" title="this"></a>this</h3><p>在JS中this表示当前行为主体，我们主要研究函数中的this</p>
+<ul>
+<li>全局中this是window</li>
+<li>函数执行的时候方法中的this要看函数执行的时候前面有没有“.”，如果前面有点，点前面是谁this就是谁，函数中的this和函数在哪执行在哪定义没有任何关系，只看执行的时候</li>
+<li>自执行函数里面的this永远是window（定时器中的this也是window）</li>
+<li>给元素绑定事件，事件触发的时候，里面的this就是当前绑定事件的元素。</li>
+</ul>
+<h3 id="call方法"><a href="#call方法" class="headerlink" title="call方法"></a>call方法</h3><p>每一个函数都可以使用Function的prototype上的存储的方法和属性，比较常用的call,apply,bind（有兼容性）。<br>fn.call每一个函数通过自己的<em> </em> proto <em> </em> 找到Function原型上的call方法。</p>
+<h4 id="call的作用"><a href="#call的作用" class="headerlink" title="call的作用"></a>call的作用</h4><p>改变方法中的this关键字<br>规律：fn1.call.call(fn2); 多个call其实就是第一个参数执行，里面的this是window   =》fn2.call()</p>
+<blockquote>
+<p>1）让call方法中的this当做一个函数执行<br>2）将call的this中的this修改为call的第一个参数值</p>
+</blockquote>
+<p><strong>call的语法</strong></p>
+<blockquote>
+<p>1）函数call([this],param1,param2)，第一个参数作为call的this中的this，其余后面依次是在给call的this传递的参数值。<br>2）非严格模式下，如果call中第一个参数不传或者传的是null/undefined，方法中this都是window，其余的call中第一个参数是啥就是啥。</p>
+</blockquote>
+<p>‘use strict’：是严格模式，让JS在更加严格的方式下执行。</p>
+<blockquote>
+<p>严格模式下，如果call中第一个参数不传就是undefined，其余的call中第一个参数是啥就是，如果是null就是null，如果是undefined就是undefined。</p>
+</blockquote>
+<p>###apply方法<br>apply修改方法中的this关键字</p>
+<p><strong>appl的作用</strong></p>
+<blockquote>
+<p>将apply’.’前面的this修改call中的第一个参数值，并让apply’.’前面this执行</p>
+</blockquote>
+<p>apply与call的区别</p>
+<blockquote>
+<p>首先call和apply都是改变方法中的this关键字</p>
+<ul>
+<li>call传参的时候是从第二个参数开始一个一个的传递</li>
+<li>apply是把需要传递的参数值放在一个数组里，也相当于一个一个将参数传递进去</li>
+</ul>
+</blockquote>
+<p>###bind方法（IE6-8不兼容）<br>预处理：事先将fn中的this修改为arry1但并不会让fn执行，而是将改造后的fn当做返回值返回，用的时候在执行。</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h3><ul>
+<li>空数组：<code>var ary=new Array();</code></li>
+<li>指定长度数组：<code>var ary=new Array(Size)</code></li>
+<li>指定元素数组：<code>var ary=new Array(el1,el2,el3)</code></li>
+<li>单维数组<code>var ary=[el1,el2,el3]</code></li>
+<li>多维数组<code>var a=new Array([数组1],[数组2])</code></li>
+</ul>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><h4 id="存取数组"><a href="#存取数组" class="headerlink" title="存取数组"></a>存取数组</h4><ul>
+<li>单维数组：数组名[下标索引]</li>
+<li>多维数组：数组名[外层数组下标][内层元素下标]<h4 id="增加数组"><a href="#增加数组" class="headerlink" title="增加数组"></a>增加数组</h4>使用“[]”运算符指定一个新下标<h4 id="删除数组"><a href="#删除数组" class="headerlink" title="删除数组"></a>删除数组</h4>delete 数组名[下标名]<h4 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h4>for(var key in ary)<h3 id="常用数组方法"><a href="#常用数组方法" class="headerlink" title="常用数组方法"></a>常用数组方法</h3></li>
+<li>push 在数组末尾添加数组</li>
+<li>unshift 在数组头部添加元素</li>
+<li>pop 在数组末尾的删除元素</li>
+<li>shift在数组开头删除元素</li>
+<li>contact 合并两个数组</li>
+<li>splice<ul>
+<li>splice(m,n)从数组索引m开始，删除n个</li>
+<li>splice(m,n,x)从数组索引m开始，删除n个，再删除位置插入x元素</li>
+</ul>
+</li>
+<li>slice</li>
+<li>reverse()颠倒数组中元素的顺序</li>
+<li>sort()数组排序</li>
+<li>toString()转换为字符串并返回</li>
+<li>toLocaleString()转换为本地格式字符串并返回</li>
+<li>join()用指定分割符分割数组并转化为字符串</li>
+<li>indexOf()从数组的起始位置开始查找，找到查找的项</li>
+<li>lastIndexOf()从数组的结束位置开始查找，要查找的项</li>
+<li>filter()过滤数组的每一项</li>
+<li>map()映射数组中每一项</li>
+<li>foreach()</li>
+<li>reduce()从数组起始位开始遍历</li>
+<li>reduceRight()从数组末尾开始遍历<h3 id="常用数组算法"><a href="#常用数组算法" class="headerlink" title="常用数组算法"></a>常用数组算法</h3></li>
+<li><p>快速排序<br>快速排序思想：在数组中 取出中间位置的那个数 作为基准点 ，然后把数组中剩下的依次和这个基准点进行比较，比基准点小的放在 左边数组集合 比基准点大的放在右边的数组集合，左右两边集合 按照以上排序思想进行排序  直到数组集合中只剩下一个或空 代表排序结束 然后最终拼接在一起。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">var arr = [12, 10, 22, 11, 8, 9, 2];</div><div class="line">//    arr.sort(function (a, b) &#123;</div><div class="line">//          return a - b;</div><div class="line">//    &#125;)</div><div class="line">//     1. 取出数组中中间位置那个数 ： leng/2 =&gt; 7/2 =&gt; Math.floor(length/2) =&gt; 3 arr[3] =&gt; arr.splice(3,1) =&gt; [11] =&gt; [11][0] =&gt;11</div><div class="line">//    2.for 依次拿出 和基准点进行比较 left []  right[]</div><div class="line"></div><div class="line">    function quickSort(arry) &#123;</div><div class="line">         if(arry.length &lt;= 1)&#123;</div><div class="line">             return arry;</div><div class="line">         &#125;</div><div class="line">         var midInd = Math.floor(arry.length/2); // 得到中间位置的索引</div><div class="line">         var midNum = arry.splice(midInd,1)[0]; // 把中间这个数在数组中取出来 作为基准点</div><div class="line">         var left = [];  // 用来存放比基准点小的</div><div class="line">         var right = []; // 用来存放比基准点大的</div><div class="line">         for(var i = 0; i &lt; arry.length; i++)&#123; // 把数组中里每一项依次拿出 和基准点 进行比较</div><div class="line">             var cur = arry[i];</div><div class="line">                 if(cur &lt; midNum)&#123; // 比基准点小的 放到 left集合</div><div class="line">                     left.push(cur);</div><div class="line">                 &#125; else &#123;  // 比基准点大的 放到 right 集合</div><div class="line">                     right.push(cur);</div><div class="line">                 &#125;</div><div class="line">         &#125;</div><div class="line">//                [8]left最终返回值.concat(midNum, right最终返回值)</div><div class="line">         return quickSort(left).concat(midNum,quickSort(right));</div><div class="line"></div><div class="line">    &#125;</div><div class="line">    console.log(quickSort(arr));</div></pre></td></tr></table></figure>
+</li>
+<li><p>冒泡排序<br>冒泡排序思想：相邻两个数进行比较 如果当前项比后一项大就交换位置 否则不交换从小到大</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">var arr = [12, 10, 22, 11, 8, 9, 2];</div><div class="line">  // 规律</div><div class="line">  // 7个 arr.length个 比较arr.length-1轮</div><div class="line">  //  每一轮 比较次数 arr.length-1 - 上轮数</div><div class="line">  function popSort(arry) &#123;</div><div class="line">      for (var i = 0; i &lt; arry.length - 1; i++) &#123; // 控制轮数</div><div class="line">          var flag = true; // 标记 是否需要排序</div><div class="line">          for (var j = 0; j &lt; arry.length - 1 - i; j++) &#123; // 控制次数</div><div class="line">              if (arry[j] &gt; arry[j + 1]) &#123;  // 如果当前项比后一项大 交换位置</div><div class="line">                  var temp = arry[j];      // 先找个 空杯子 把 其中一个倒进去 再交换</div><div class="line">                  arry[j] = arry[j + 1];</div><div class="line">                  arry[j + 1] = temp;</div><div class="line">                  flag = false; // 代表着交换过位置</div><div class="line">              &#125;</div><div class="line">              if (flag) &#123; // 如果 比较一轮后发现 flag还为true 说明没有交换过位置 没必要再比较</div><div class="line">                  return arry</div><div class="line">              &#125;</div><div class="line">          &#125;</div><div class="line">      &#125;</div><div class="line">      return arry;</div><div class="line">  &#125;</div><div class="line">  console.log(popSort(arr));</div><div class="line">  console.log(popSort([1,2,3,4]));</div><div class="line"></div><div class="line">  //    第一轮 [12, 10, 22, 11, 8, 9, 2]  第一大 （老大）22  arr.length - 1 - 0 次 6</div><div class="line">  //    12 &gt; 10  [10, 12, 22, 11, 8, 9, 2]</div><div class="line">  //    12 &lt; 22  [10, 12, 22, 11, 8, 9, 2]</div><div class="line">  //    22 &gt; 11  [10, 12, 11, 22, 8, 9, 2]</div><div class="line">  //    22 &gt; 8   [10, 12, 11, 8, 22, 9, 2]</div><div class="line">  //    22 &gt; 9   [10, 12, 11, 8, 9, 22, 2]</div><div class="line">  //    22 &gt; 2  [10, 12, 11, 8, 9, 2, 22]</div><div class="line"></div><div class="line">  // 第二轮 [10,12,11,8,9,2,22]   第二大 （老二）12   arr.length - 1 - 1次 5</div><div class="line">  //    10 &lt; 12  [10,12,11,8,9,2,22]</div><div class="line">  //    12 &gt; 11 [10,11,12,8,9,2,22]</div><div class="line">  //    12 &gt; 8  [10,11,8,12,9,2,22]</div><div class="line">  //    12 &gt; 9  [10,11,8,9,12,2,22]</div><div class="line">  //    12 &gt; 2 [10,11,8,9,2,12,22]</div><div class="line"></div><div class="line">  //    12 &gt; 22 [10,11,8,9,2,12,22] =&gt; 没必要</div></pre></td></tr></table></figure>
+</li>
+<li><p>数组去重</p>
+</li>
+</ul>
+<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h3><p>把描述同一个事物或同一个对象的属性或方法放在一个内存空间，起到分组的作用</p>
+<h2 id="JS的同步与异步"><a href="#JS的同步与异步" class="headerlink" title="JS的同步与异步"></a>JS的同步与异步</h2><p>在JS中大部分都是同步的，只有四种情况是异步的：定时器，给事件绑定函数，AJAX，回掉函数。</p>
+<h3 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h3><p>JS代码会至上而下一条线执行下去，但是有时候我们需要等到一个操作结束之后再进行下一个操作，这时候就需要用到回调函数。</p>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h3 id="获取DOM对象"><a href="#获取DOM对象" class="headerlink" title="获取DOM对象"></a>获取DOM对象</h3><p><code>document.getElementById(&#39;idName&#39;)</code></p>
+<ul>
+<li>document是获取范围，通过ID名称获取第一个。</li>
+<li>获取一个元素</li>
+<li>在IE67中，会将表单元素的name属性值当做id名称来调取，并且不区分大小写</li>
+<li>可以直接调用id代表这个元素，不推荐</li>
+</ul>
+<p><code>document.getElementByTagName(&#39;tagName&#39;)</code></p>
+<ul>
+<li>document是一个可以变的范围</li>
+<li>获取到的是一个集合，即类数组，有索引和长度</li>
+<li>获取的时候通过集合中的索引来进行获取obj[0]/obj.item(0)</li>
+</ul>
+<p><code>document.getElementByName(&#39;name&#39;)</code></p>
+<ul>
+<li>document是一个可以变的范围</li>
+<li>获取到的是一个集合，即类数组，有索引和长度</li>
+<li>获取的时候通过集合中的索引来进行获取obj[0]/obj.item(0)</li>
+<li>在IE9以下,只对表单元素起作用</li>
+</ul>
+<p><code>document.getElementsByClassName(&#39;className&#39;)</code>不兼容</p>
+<ul>
+<li>获取到的是一个集合，类数组（索引、长度）</li>
+<li>document是一个可以变的范围</li>
+<li>获取的时候通过集合中的索引来进行获取  obj[0] / obj.item(0)</li>
+<li>在IE9以下报错</li>
+</ul>
+<p><code>document.documentElement</code></p>
+<ul>
+<li>获取根元素</li>
+</ul>
+<p><code>document.body</code></p>
+<ul>
+<li>获取body元素</li>
+</ul>
+<p><code>var width=document.documentElement.clientWidth||document.body.clientWidth</code></p>
+<ul>
+<li>获取当前页面的宽度</li>
+</ul>
+<p><code>document.querySelector(&quot;#id&quot;)</code></p>
+<ul>
+<li>获取一个，在移动端我们获取元素常用的方法</li>
+</ul>
+<p><code>document.querySelectorAll(&quot;.class&quot;);</code></p>
+<ul>
+<li>获取一组，选择器参考css选择器的规则</li>
+</ul>
+<h3 id="DOM节点"><a href="#DOM节点" class="headerlink" title="DOM节点"></a>DOM节点</h3><p>在页面中出现的所有东西都是节点，元素、注释、文本等都是节点。通过节点可以进行DOM对象的增删改查。</p>
+<p>常用的DOM节点：</p>
+<ul>
+<li>childNodes获取所有的子节点（一组）</li>
+<li>children获取所有元素子节点（一组）</li>
+<li>parentNode获取父亲节点</li>
+<li>previousSibling 获取上一个节点</li>
+<li>previousElementSibling 上一个元素节点（不兼容）</li>
+<li>nextSibling 获取弟弟节点</li>
+<li>nextElementSibling下一个元素节点（不兼容）</li>
+<li>firstChild 获取子节点中的第一个</li>
+<li>firstElementChild （不兼容）</li>
+<li>lastChild  获取子节点中最后一个</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">节点类型</th>
+<th style="text-align:center">nodeType</th>
+<th style="text-align:center">nodeName</th>
+<th style="text-align:center">nodeValue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">元素节点（元素标签）</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">大写的标签名</td>
+<td style="text-align:center">null</td>
+</tr>
+<tr>
+<td style="text-align:center">文本节点（文字）</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">#text</td>
+<td style="text-align:center">文字内容</td>
+</tr>
+<tr>
+<td style="text-align:center">注释节点（注释）</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">#comment</td>
+<td style="text-align:center">注释内容</td>
+</tr>
+<tr>
+<td style="text-align:center">document（整个文档）</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">#document</td>
+<td style="text-align:center">null</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DOM节点的增删改查"><a href="#DOM节点的增删改查" class="headerlink" title="DOM节点的增删改查"></a>DOM节点的增删改查</h4><h5 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h5><p><code>createElement()</code></p>
+<ul>
+<li>创建元素节点</li>
+</ul>
+<p><code>父级元素.appendChild(oDiv);</code></p>
+<ul>
+<li>将新创建的元素节点添加到指定元素所有内容之后（末尾）</li>
+</ul>
+<p><code>父级元素.insertBefore(new,old)</code></p>
+<ul>
+<li>将创建的元素添加到已有元素之前</li>
+</ul>
+<h5 id="删除创建的元素节点"><a href="#删除创建的元素节点" class="headerlink" title="删除创建的元素节点"></a>删除创建的元素节点</h5><p><code>父级元素.removechild(删除对象)</code></p>
+<ul>
+<li>已有的和新创建的元素节点都可以移除</li>
+</ul>
+<h5 id="克隆元素节点"><a href="#克隆元素节点" class="headerlink" title="克隆元素节点"></a>克隆元素节点</h5><p><code>oDiv.cloneNode(true)</code></p>
+<ul>
+<li>默认参数为false，不填参数：只克隆当前元素</li>
+<li>true：克隆当前元素与元素的所有子节点</li>
+</ul>
+<h5 id="替换元素节点"><a href="#替换元素节点" class="headerlink" title="替换元素节点"></a>替换元素节点</h5><p><code>父级元素.replaceChild(替换对象，被替换的对象)</code></p>
+<h4 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h4><p><code>oDiv.setAttribute(属性名,属性值)</code></p>
+<ul>
+<li>直接向对象添加一对键值对，这个属性会在html标签中显示</li>
+</ul>
+<p><code>oDiv.getAttribute(&#39;属性名&#39;)</code></p>
+<ul>
+<li>获取属性值</li>
+</ul>
+<p><code>oDiv.removeAttribute(&#39;属性名&#39;)</code></p>
+<ul>
+<li>删除属性名</li>
+</ul>
+<h3 id="DOM回流和重绘"><a href="#DOM回流和重绘" class="headerlink" title="DOM回流和重绘"></a>DOM回流和重绘</h3><h4 id="DOM回流"><a href="#DOM回流" class="headerlink" title="DOM回流"></a>DOM回流</h4><p>页面中html结构发生改变（增删改），浏览器就会重新计算一次DOM结构</p>
+<h4 id="DOM重绘"><a href="#DOM重绘" class="headerlink" title="DOM重绘"></a>DOM重绘</h4><p>页面中部分样式发生了改变（背景颜色，字体颜色），浏览器只会把这个改变的元素重新渲染。</p>
+<h3 id="DOM映射"><a href="#DOM映射" class="headerlink" title="DOM映射"></a>DOM映射</h3><p>html页面中的元素和JS中通过DOM方法获取的元素对象，是绑定在一起的，一一对应的，一个改变另一个也会改变。</p>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>事件就是文档或浏览器窗口中发生的一些特定的交互瞬间，可以使用侦听器来预定事件，以便事件发生时执行相应的代码。</p>
+<h3 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h3><p>事件流描述的是从页面中接受事件的顺序。</p>
+<h3 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h3><p>事件开始时由最具体的元素（文档中嵌套层次最深的那个节点）接受，然后逐级向上传播到较为不具体的节点（文档）。</p>
+<h3 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h3><p>不太具体的节点应该更早接受到事件，而最具体的节点应该最后接受到事件。</p>
+<blockquote>
+<p>由于老版本的浏览器不支持，很少使用事件捕获，建议使用事件冒泡，在有特殊需要时再使用事件捕获。</p>
+</blockquote>
+<h3 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h3><p>共三个阶段</p>
+<ul>
+<li>事件捕获阶段</li>
+<li>处于目标阶段</li>
+<li>事件冒泡阶段<blockquote>
+<p>IE8以下不支持DOM事件流</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="事件处理程序（函数）"><a href="#事件处理程序（函数）" class="headerlink" title="事件处理程序（函数）"></a>事件处理程序（函数）</h3><p>事件就是用户或浏览器自身执行的某种动作，响应某个事件的函数叫做事件处理程序。事件处理程序的名字以“on”开头。</p>
+<h4 id="html事件"><a href="#html事件" class="headerlink" title="html事件"></a>html事件</h4><p>某个元素支持的每种事件，都可以使用一个与相应事件处理程序同名的HTML特性来指定，这个特性的值应该是能够执行的JS代码。</p>
+<h4 id="DOM0级事件"><a href="#DOM0级事件" class="headerlink" title="DOM0级事件"></a>DOM0级事件</h4><p><code>btn.onclick=function(){}</code></p>
+<h4 id="DOM2级事件"><a href="#DOM2级事件" class="headerlink" title="DOM2级事件"></a>DOM2级事件</h4><ul>
+<li>添加事件<code>addEventListener()</code></li>
+<li>删除事件<code>removeEventListener()</code><h4 id="IE事件"><a href="#IE事件" class="headerlink" title="IE事件"></a>IE事件</h4></li>
+<li>attachEvent()</li>
+<li>detachEvent()<h2 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h2><h3 id="正则是什么？如何学习？"><a href="#正则是什么？如何学习？" class="headerlink" title="正则是什么？如何学习？"></a>正则是什么？如何学习？</h3><blockquote>
+<p>正则就是由相关‘元字符’和‘修饰符’组成的一个规则，用来匹配、验证或者捕获<strong>字符串</strong>中某些内容的规则（正则仅仅是用来处理字符串的）</p>
+</blockquote>
+</li>
+<li>元字符</li>
+<li>修饰符</li>
+<li>编写常用的正则</li>
+<li>正则的验证</li>
+<li>正则的捕获</li>
+<li>正则的一些小实战以及一些常规方法的封装：myQueryURLParameter、myTrim、myFormatTime…</li>
+</ul>
+<h3 id="复习字符串常用方法"><a href="#复习字符串常用方法" class="headerlink" title="复习字符串常用方法"></a>复习字符串常用方法</h3><ul>
+<li>charAt/charCodeAt(‘索引’)：根据索引获取指定位置的字符（或者字符的Unicode编码值）</li>
+<li><p>String.fromCharCode([Unicode编码])：通过指定的编码获取对应的字符。</p>
+</li>
+<li><p>substr(n,m)：从索引n开始截取m个字符（m不写截取到末尾），n和m不支持负数。</p>
+</li>
+<li>substring(n,m)：从索引n开始找到索引为m处（不包含m），n和m不支持负数。</li>
+<li><p>slice(n,m)：和 substring一样，只是可以支持以负数作为索引（负索引：总长度+负索引，得到的结果就是查找的索引位置）</p>
+</li>
+<li><p>indexOf/lastIndexOf：找到字符在字符串中第一次或者最后一次出现位置的索引，如果没有这个字符返回的是-1（通过这也可以判断当前的字符串中是否包含这个字符）</p>
+</li>
+<li><p>search()：和indexOf相同，都是获取字符出现位置的索引，只是search支持正则</p>
+</li>
+<li><p>toUpperCase/toLowerCase：把一个字符串中所有字符转换成大写或者小写</p>
+</li>
+<li><p>split()：按照指定的分隔符，把一个字符串拆分成数组中的每一项，可以支持正则</p>
+</li>
+<li>replace():把字符串中的原有字符进行替换，在不使用正则的情况下，执行一次replace，只能替换一次，这个方法也可以支持正则</li>
+<li>match()：根据正则匹配到所有符合规则的结果，最后以一个数组来存储。</li>
+<li>localeCompare()：两个字符串之间的比较，按照每一个字符的Unicode编码值进行比较</li>
+<li>trim/trimLeft/trimRight()：去除字符串的首尾空格（trimLeft去除首空格/trimRight去除尾空格），不兼容</li>
+</ul>
+<h3 id="正则的元字符"><a href="#正则的元字符" class="headerlink" title="正则的元字符"></a>正则的元字符</h3><p>元字符：[元字符]在//之间具有意义的一些字符</p>
+<ol>
+<li>具有特殊意义的字符的元字符：</li>
+</ol>
+<ul>
+<li>\ 转义字符，转义后面字符所代表的含义。</li>
+<li>^ 以某一个元素符开始，在正则中是没有位置的。</li>
+<li>$ 以某一个元素符结尾，在正则中是没有位置的。</li>
+<li>. 除了\n以外的任意字符。</li>
+<li>\n 匹配一个换行符。</li>
+<li>\d匹配0-9之间的任意数字 \D除了0-9之间数字的任意字符</li>
+<li>\b匹配一个边界符</li>
+<li>\w匹配数字、字母、下划线中的任意字符</li>
+<li>\s匹配一个空白字符</li>
+<li>[xyz]x或者y或者z中的一个，例如：[abcd]四个字母中的任意一个</li>
+<li>[^xyz]除了三个以外的任意字符</li>
+<li>[a-z]匹配a-z中的任意字符</li>
+<li>[^a-z]匹配除了a-z中的任意字符</li>
+<li>x|y匹配x或者y中的任意一个</li>
+<li>()分组</li>
+<li>?:只匹配不捕获</li>
+<li>?=正向预查</li>
+<li>?!负向预查 两个预查也起到了只匹配不捕获的作用</li>
+</ul>
+<blockquote>
+<p>问号（？）在正则中的五大作用：<br>1、放在一个普通的元字符后面，代表出现零到一次=&gt;量词元字符<br>2、放在一个量词元字符，代表取消正则捕获时候的贪婪性<br>3、(?:)设定当前分组只匹配不捕获<br>4、(?=)正向预查<br>5、(?!)负向预查 两个预查以起到了只匹配不捕获的作用</p>
+</blockquote>
+<ol>
+<li>代表出现次数的量词元素符：</li>
+</ol>
+<ul>
+<li>* 出现零到多次</li>
+<li>+ 出现一到多次</li>
+<li>？ 出现零次或一次</li>
+<li>{n} 出现n次</li>
+<li>{n，} 出现n次到多次</li>
+<li>{n，m} 出现n次到m次</li>
+</ul>
+<ol>
+<li>普通元字符<br>代表本身意思的元字符。</li>
+</ol>
+<h3 id="正则的修饰符"><a href="#正则的修饰符" class="headerlink" title="正则的修饰符"></a>正则的修饰符</h3><ul>
+<li>i：ignoreCase 忽略大小写</li>
+<li>m：multiline 匹配换行</li>
+<li>g：global  全局匹配</li>
+</ul>
+<h3 id="正则的捕获"><a href="#正则的捕获" class="headerlink" title="正则的捕获"></a>正则的捕获</h3><p>test：正则的方法，验证某一个字符串是否符合某一个规则。</p>
+<ol>
+<li><p>手机号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var reg = /^1\d&#123;10&#125;$/;</div></pre></td></tr></table></figure>
+</li>
+<li><p>身份证</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var reg = /^(\d&#123;6&#125;)(\d&#123;4&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;\d&#123;2&#125;(\d)(?:\d|X)$/;</div></pre></td></tr></table></figure>
+</li>
+<li><p>验证是否为有效数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var reg = /^[+-]?(\d|([1-9]\d+))(\.\d+)?$/;</div><div class="line">    //    //-&gt; ([1-9]\d+) 多位数不能以0开头 A</div><div class="line">    //    //-&gt; (\d|A) 一位数或者多位数 =&gt;整数</div><div class="line">    //    //-&gt; ()? 整个小数部分出现零到一次</div><div class="line">    //    reg = /^(\+|-)?(\d|([1-9]\d+))(\.\d+)?$/;//-&gt;如何区分是第几个分组：按照小括号左半部分从左到右数即可(不分层级)，数的过程中跳过?:、?=、?!，因为他们只匹配不捕获</div></pre></td></tr></table></figure>
+</li>
+<li><p>验证是否为中文姓名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var reg = /^[\u4e00-\u9fa5]&#123;2,4&#125;$/;</div></pre></td></tr></table></figure>
+</li>
+<li><p>用户昵称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">     * 数字、字母、下划线、汉字 （14个英文或者7个汉字=&gt;一个汉字是两个字节，也就是最多14个字节）</div><div class="line">     */</div><div class="line">    function checkNick(nick) &#123;</div><div class="line">        var reg1 = /^[\u4e00-\u9fa5]$/,//-&gt;检测是否为中文</div><div class="line">                reg2 = /^\w$/;//-&gt;检测是否为数字、字母、下划线</div><div class="line">        var len = 0;</div><div class="line">        for (var i = 0; i &lt; nick.length; i++) &#123;</div><div class="line">            var cur = nick[i];</div><div class="line">            if (reg1.test(cur)) &#123;</div><div class="line">                len += 2;</div><div class="line">            &#125; else if (reg2.test(cur)) &#123;</div><div class="line">                len++;</div><div class="line">            &#125; else &#123;</div><div class="line">                len = 0;</div><div class="line">                break;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        if (len === 0 || len &gt; 14) &#123;</div><div class="line">            return false;</div><div class="line">        &#125;</div><div class="line">        return true;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>年龄</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line">     * 18-65岁之间</div><div class="line">     * 三个区间</div><div class="line">     *   -&gt; 1(8|9)   18-19</div><div class="line">     *   -&gt; [2-5]\d  20-59</div><div class="line">     *   -&gt; 6[0-5]   60-65</div><div class="line">     */</div><div class="line">    //    var reg = /^((1(8|9))|([2-5]\d)|(6[0-5]))$/;</div><div class="line">    //    reg = /^((2[2-9])|(3[0-5]))$/;//-&gt;22-35</div></pre></td></tr></table></figure>
+</li>
+<li><p>邮箱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//邮箱的：var reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;</div><div class="line">  // -&gt; ^\w+((-\w+)|(\.\w+))*</div><div class="line">  // @以前的部分可以是数字、字母、下划线、-、.都可以</div><div class="line">  //   以一到多个数字、字母、下划线开头(不能以-或者.开头)</div><div class="line">  //   -或者.不能连续出现，出现的话必须后面跟其它的</div><div class="line">  // -&gt; @[A-Za-z0-9]+  ：@163 / @yahoo / @zhufeng</div><div class="line">  // -&gt; ((\.|-)[A-Za-z0-9]+)* ：可有可无  -peixun / .com</div><div class="line">  // -&gt; \.[A-Za-z0-9]+ ：.com / .cn</div></pre></td></tr></table></figure>
+</li>
+<li><p>密码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//密码的：不能是纯数字也不能是纯字母,只能是数字字母组合在一起的(6~10位)</div><div class="line">   //    var reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]&#123;6,10&#125;$/;</div><div class="line">   //    var reg = /^[0-24-9]+$/;</div><div class="line">   //    var reg = /^((?!3)\d)+$/;//-&gt;((?!3)\d) 出现一个数字但是不能是3，然后这个机制规则可以出现多次</div></pre></td></tr></table></figure>
+</li>
+<li><p>去除首尾空格的方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> * 字符串中有一个方法:trim/trimLeft/trimRight,它的意思是去除字符串的首尾空格,但是此方法不兼容,如果让你去写,如何处理兼容</div><div class="line"> */</div><div class="line">String.prototype.myTrim = function myTrim() &#123;</div><div class="line">    if (&apos;trim&apos; in String.prototype) &#123;</div><div class="line">        return this.trim();</div><div class="line">    &#125;</div><div class="line">    return this.replace(/^ +| +$/g, &apos;&apos;);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="组的作用："><a href="#组的作用：" class="headerlink" title="组的作用："></a>组的作用：</h3><blockquote>
+<p>1、可以改变正则处理时候的优先级(x|y)<br> 2、”分组捕获”：分组其实可以理解为一个大正则中分出的一个小正则，在正则捕获的时候，我们不仅仅可以把大正则匹配的结果捕获到，也可以把小分组匹配的结果捕获到<br> 3、”分组引用”：出现和前面分组一模一样的结果</p>
+</blockquote>
+<p>[]的一些细节问题</p>
+<blockquote>
+<p>1、中括号中出现的元字符大部分都是代表的本身含义：[+-]中的+就是代表加号不是量词、[.]中的点就是小数点的意思不是任意字符了…<br>  2、中括号里面不能识别两位数字：/^[18-65]$/ 它不是18-65之间，它代表 1或者8-6或者5中间的一个(这里不能8-6这样写范围,所以正则会报错)</p>
+</blockquote>
+<h3 id="exec方法"><a href="#exec方法" class="headerlink" title="exec方法"></a>exec方法</h3><p>exec()通过exec执行，获取的结果是一个数组（Array的实例），第一项是正则捕获的内容，index捕获开始的索引，input是原始的字符串。</p>
+<h3 id="match"><a href="#match" class="headerlink" title="match"></a>match</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var str = &apos;130424199712190017&apos;;</div><div class="line">var reg = /^(\d&#123;6&#125;)(\d&#123;4&#125;)(\d&#123;2&#125;)(\d&#123;2&#125;)\d&#123;2&#125;(\d)(?:\d|X)$/;</div><div class="line">console.log(str.match(reg));//-&gt;match：字符串的方法,捕获到正则匹配的结果，只要加上了分组，在捕获的时候不仅把大正则匹配的捕获到，而且里面的每一个小分组(小正则)匹配的也可以单独的捕获到,如果其中有某一个分组不需要捕获(仅仅是改变优先级方便匹配),我们在分组的前面加“?:”=&gt;只匹配不捕获   [&quot;130424199712190017&quot;, &quot;130424&quot;, &quot;1997&quot;, &quot;12&quot;, &quot;19&quot;, &quot;1&quot;...]</div></pre></td></tr></table></figure>
+<h3 id="正则的懒惰和贪婪性"><a href="#正则的懒惰和贪婪性" class="headerlink" title="正则的懒惰和贪婪性"></a>正则的懒惰和贪婪性</h3><p>执行一次exec只能捕获一次，需要捕获多次的话，也需要执行多次。不管我们执行多少次，总之捕获的永远是第一个。这就是正则的懒惰性</p>
+<ul>
+<li>每次捕获的时候不仅仅可以把大正则匹配的结果捕获到，也可以获取小分组捕获的结果。</li>
+</ul>
+<p>reg.lastindex：下一次正则捕获的起始索引位置（也就是下一次捕获的时候是从哪开始找的，第一次捕获的时候值是0）。在正则不做任何处理的情况下，我们下一次捕获之前这个值依然为0，所以会重复捕获第一个内容。而且即使我们手动把值改了，也没有任何作用，解决懒惰性只能有一种办法，加全局修饰符g。</p>
+<p>match捕获时也要g，不加也只捕获第一个。<br>捕获多次的话，只能捕获到大正则的，小分组的是不能捕获的，但是如果match只需要捕获一次，就可以了</p>
+<h3 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h3><p>实现字符串的替换，如果第一项传递的是正则的话，浏览器默认的也会和我们的字符串进行捕获，而且每捕获一次就会触发后面的回掉函数执行一次。<br>每一次执行函数给函数传递了一些参数值：arguments，arg存储的值和每一次通过exec捕获的结果一模一样（既有大正则捕获的结果，也有小分组捕获的结果）</p>
+<p>如果在替换的字符串中出现了 $1/ $ 2这种字符，代表获取当前捕获的结果中第一个分组或者第N个分组中的内容。</p>
+<h4 id="贪婪性："><a href="#贪婪性：" class="headerlink" title="贪婪性："></a>贪婪性：</h4><p>每一次捕获的结果都是当前正则匹配的最长结果。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/08/javaScript/" data-id="cj4ul9va20001gou6gndd7rpg" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/07/08/javaScript/" data-id="cj4ulhxrr00008gu6ofjgm233" class="article-share-link">Share</a>
       
       
     </footer>
@@ -98,15 +714,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/07/08/面试题/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nieuwer</strong>
-      <div class="article-nav-title">
-        
-          面试题
-        
-      </div>
-    </a>
   
+    <a href="/2017/07/08/面试题/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">面试题</div>
+    </a>
   
 </nav>
 
@@ -127,7 +739,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
     </div>
@@ -137,16 +749,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/07/08/面试题/">面试题</a>
+            <a href="/2017/07/08/javaScript/">JS总结</a>
           </li>
         
           <li>
-            <a href="/2017/07/08/javaScript/">JS总结</a>
+            <a href="/2017/07/08/面试题/">面试题</a>
           </li>
         
       </ul>
