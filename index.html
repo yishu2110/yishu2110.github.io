@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -64,7 +64,7 @@
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/08/hello-world/" class="article-date">
-  <time datetime="2017-07-08T00:22:05.497Z" itemprop="datePublished">2017-07-08</time>
+  <time datetime="2017-07-08T00:45:01.990Z" itemprop="datePublished">2017-07-08</time>
 </a>
     
   </div>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/08/hello-world/">blog</a>
+      <a class="article-title" href="/2017/07/08/hello-world/">知识点总结</a>
     </h1>
   
 
@@ -83,123 +83,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h3 id="HTML-amp-CSS："><a href="#HTML-amp-CSS：" class="headerlink" title="HTML&amp;CSS："></a>HTML&amp;CSS：</h3><pre><code>对Web标准的理解、浏览器内核差异、兼容性、hack、CSS基本功：布局、盒子模型、选择器优先级、
+        <h3 id="HTML-amp-CSS："><a href="#HTML-amp-CSS：" class="headerlink" title="HTML&amp;CSS："></a>HTML&amp;CSS：</h3><pre><code>对Web标准的理解、浏览器内核差异、兼容性、hack、CSS基本功：布局、盒子模型、选择器优先级、
 HTML5、CSS3、Flexbox
-</code></pre><h3 id="JavaScript："><a href="#JavaScript：" class="headerlink" title="JavaScript："></a>JavaScript：</h3><pre><code>数据类型、运算、对象、Function、继承、闭包、作用域、原型链、事件、RegExp、JSON、Ajax、
-DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、路由、模块化、Canvas、ECMAScript 6、Nodejs
-</code></pre><h3 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h3><pre><code>移动端、响应式、自动化构建、HTTP、离线存储、WEB安全、优化、重构、团队协作、可维护、易用性、SEO、UED、架构、职业生涯、快速学习能力
-</code></pre><h3 id="作为前端工程师必会知识"><a href="#作为前端工程师必会知识" class="headerlink" title="作为前端工程师必会知识"></a>作为前端工程师必会知识</h3><p>1、DOM结构 —— 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。</p>
-<pre><code>2、DOM操作 —— 如何添加、移除、移动、复制、创建和查找节点等。
-
-3、事件 —— 如何使用事件，以及IE和标准DOM事件模型之间存在的差别。
-
-4、XMLHttpRequest —— 这是什么、怎样完整地执行一次GET请求、怎样检测错误。
-
-5、严格模式与混杂模式 —— 如何触发这两种模式，区分它们有何意义。
-
-6、盒模型 —— 外边距、内边距和边框之间的关系，及IE8以下版本的浏览器中的盒模型
-
-7、块级元素与行内元素 —— 怎么用CSS控制它们、以及如何合理的使用它们
-
-8、浮动元素 —— 怎么使用它们、它们有什么问题以及怎么解决这些问题。
-
-9、HTML与XHTML —— 二者有什么区别，你觉得应该使用哪一个并说出理由。
-
-10、JSON —— 作用、用途、设计结构。
-</code></pre><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><h4 id="Doctype作用？标准模式与兼容模式各有什么区别"><a href="#Doctype作用？标准模式与兼容模式各有什么区别" class="headerlink" title="Doctype作用？标准模式与兼容模式各有什么区别?"></a>Doctype作用？标准模式与兼容模式各有什么区别?</h4><ul>
-<li><p>&lt;!DOCTYPE&gt;声明位于位于HTML文档中的第一行，处于 html 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。</p>
-</li>
-<li><p>标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示，模拟老式浏览器的行为以防止站点无法工作。</p>
-</li>
-</ul>
-<h4 id="HTML5-为什么只需要写-lt-DOCTYPE-HTML-gt-？"><a href="#HTML5-为什么只需要写-lt-DOCTYPE-HTML-gt-？" class="headerlink" title="HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？"></a>HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？</h4><p> HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。</p>
-<h4 id="行内元素有哪些？块级元素有哪些？-空-void-元素有那些？"><a href="#行内元素有哪些？块级元素有哪些？-空-void-元素有那些？" class="headerlink" title="行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？"></a>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h4><p>  首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</p>
-<ol>
-<li>行内元素有：a b span img input select strong（强调的语气）</li>
-<li>块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</li>
-<li>常见的空元素：<br>   br hr img input link meta<br>   鲜为人知的是：  <figure class="highlight plain"><figcaption><span><base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">     不同浏览器（版本）、HTML4（5）、CSS2等实际略有差异</div><div class="line">  参考: http://stackoverflow.com/questions/6867254/browsers-default-css-for-html-elements</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">1. 一个页面从输入 URL 到页面加载完的过程中都发生了什么事情？越详细越好</div><div class="line">（这个问既考察技术深度又考察技术广度，其实要答好是相当难的，用STAR问法，这一道题能聊1个多小时不成问题的。注意越详细越好）</div><div class="line">2. 谈一下你所知道的页面性能优化方法？ 这些优化方法背后的原理是什么？</div><div class="line">3. 如何分析页面性能？</div><div class="line">4. 描述一个你遇到过的技术问题，你是如何解决的？ 然后会接着问：这个问题挺常见的网上有很多解决方法，有没有遇到过不常见的 网上也找不到的问题</div><div class="line">5. 兴趣相关：最近在学习什么啊，后半年有什么打算啊，2年后希望自己是个什么水平啊，做什么事让你最有成就感</div><div class="line">6. 工作相关：之前做的项目，有哪些需求点是你主动提出来或者改进的，是否参与过开源项目，业余时间是否做过一些让自己变懒的小程序</div><div class="line"></div><div class="line">#### display:none和visible:hidden都能把网页上某个元素隐藏起来，但两者有区别:</div><div class="line">display:none ---不为被隐藏的对象保留其物理空间，即该对象在页面上彻底消失，通俗来说就是看不见也摸不到。</div><div class="line">visible:hidden--- 使对象在网页上不可见，但该对象在网页上所占的空间没有改变，通俗来说就是看不见但摸得到。</div><div class="line"></div><div class="line">#### html标签语义化的好处</div><div class="line">- 利于seo优化</div><div class="line">- 在样式丢失的时候，还是可以比较好的呈现结构</div><div class="line">- 更好的支持各种终端，例如无障碍阅读和有声小说等</div><div class="line">- 利于团队开发和维护，遵循w3c规范，减少代码差异，提高效率</div><div class="line">#### 盒子模型加了box-sizing之后怎样？</div><div class="line">在css中盒模型被分为两种，第一种是w3c的标准模型，另外一种是IE的传统模型（IE6以下）</div><div class="line">`box-sizing:content-box | border-box | inherit`</div><div class="line">- content-box 默认值</div><div class="line">- border-box是把把边框内边距算在width里面</div><div class="line">#### 行内元素有哪些 块级有哪些 行内块级有哪些?</div><div class="line">块级元素：div dl form h1-h6 table ul li ol</div><div class="line">行内元素：a i img span input label</div><div class="line">#### 左侧固定两百 右侧自适应 这种布局怎么写？多种方式。用flexbox怎么写？</div><div class="line">方法一：利用左侧元素浮动或者绝对定位的方式使其脱离常规文档流，让两个块级元素能够在同一行显示，然后右侧元素margin-left等于左侧元素宽度，这时右侧元素将紧挨着左侧元素，由于块元素的宽度会自动默认充满剩下的屏幕，所以就实现了右侧自适应的效果了</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>html结构：</p>
-<p><body><br>    <div class="one"></div><br>    <div class="two">第一种方法</div><br></body><br>css样式：<br>.one{<br>position:absolute;<br>width:300px;<br>height:100px;<br>background-color:blue;<br>}<br>.two{<br>margin-left:-300px;<br>height:100px;<br>background-color:red;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">方法二：利用flex方法</div></pre></td></tr></table></figure></p>
-<p><style><br>.parent{<br>  height:500px;<br>  border:1px solid #222;<br>  display:flex;/<em>设为伸缩容器</em>/<br>  flex-flow:row;/<em>伸缩项目单行排列</em>/<br>}<br>.stable{<br>  width:200px;/<em>固定宽度</em>/<br>  border:1px solid  #ccc;<br>  margin:20px;<br>}<br>.change{<br>  flex:1;/<em>这里设置为占比1，填充满剩余空间</em>/<br>  border:1px solid #ff4400;<br>  margin:20px;<br>}<br></style><br></p>
-<p><body><br>  <div class="parent"><br>    <div class="stable">stable 固定宽度200px</div><br>    <div class="change">changeable 可变宽度</div><br>  </div><br></body><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">#### 输入url后的加载过程</div><div class="line">- 查找域名对应IP地址</div><div class="line">- 建立连接（TCP的三次握手）</div><div class="line">- 构建网页</div><div class="line">- 断开连接（TCP的四次挥手）</div><div class="line"></div><div class="line">#### css3中transfrom和transition、animation的区别</div><div class="line">transfrom描述元素静态样式，而transition和animation能够实现动画效果，所以一般transfrom配合后两者使用。</div><div class="line">结论：</div><div class="line">1. 如果要灵活定制多个帧以及循环，用animation.</div><div class="line">2. 如果要简单的from to 效果，用 transition.</div><div class="line">3. 如果要使用js灵活设定动画属性，用transition</div><div class="line">#### js闭包</div><div class="line">使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。在js中，函数即闭包，只有函数才会产生作用域的概念</div><div class="line">闭包有三个特性：</div><div class="line">1. 函数嵌套函数</div><div class="line">2. 函数内部可以引用外部的参数和变量</div><div class="line">3. 参数和变量不会被垃圾回收机制回收</div><div class="line">#### 事件冒泡作用</div><div class="line">允许多个操作被集中处理</div><div class="line">让不同对象同时捕捉同一事件</div><div class="line"></div><div class="line">#### 什么是阻止冒泡</div><div class="line">阻止目标元素事件向父级元素冒泡</div><div class="line">阻止冒泡------e.stopPropagation()；e.cancelBubble = true(IE)</div><div class="line">阻止默认行为--------e.preventDefault；e.returnValue = false(IE)</div><div class="line">jquery中return false既阻止冒泡又阻止默认行为</div><div class="line"></div><div class="line">#### javaScript的typeof返回数据哪些数据类型</div><div class="line">数据类型主要分为两大类：基本和引用数据类型</div><div class="line">-  基本数据类型：Number String Booean null undefined Symbol（Symbol是ES6添加的）</div><div class="line">- 引用数据类型：Object Function ....</div><div class="line">typeof运算符把类型信息以字符串的形式返回，需要注意的是typeof返回的类型与javaScript定义的类型有细微差异。typeof返回7种可能的值，“number” &quot;string&quot; &apos;boolean&apos; &apos;object&apos; &apos;symbol&apos; &apos;function&apos; &apos;undefiend&apos;</div></pre></td></tr></table></figure></p>
-<p>typeof(null)<br>“object”<br>typeof(undefined)<br>“undefined”<br>```</p>
-<h4 id="例举至少3种强制类型转换和2种隐式类型转换"><a href="#例举至少3种强制类型转换和2种隐式类型转换" class="headerlink" title="例举至少3种强制类型转换和2种隐式类型转换"></a>例举至少3种强制类型转换和2种隐式类型转换</h4><p>强制类型转换：明确调用内置函数，强制把一种类型的数值转换为另一种类型。强制类型转换有Number() String() Boolean() parseInt() parseFloat()<br>隐式类型转换：在使用算术运算符时，运算符两边的数据类型可以是任意的，比如，一个字符串可以和数字相加。之所以不同的数据类型之间可以做运算，是因为javaScript引擎在运算之前会悄悄的把他们进行隐式类型转换，隐式类型转换主要有：+ - == ！</p>
-<h4 id="javaScript的事件流模型都有什么？"><a href="#javaScript的事件流模型都有什么？" class="headerlink" title="javaScript的事件流模型都有什么？"></a>javaScript的事件流模型都有什么？</h4><p>事件流描述的是从页面接收到事件的顺序。DOM结构是树形结构，当页面中的某一个元素触发了某一个事件，事件会从最顶层的window对象开始，向下传播到目标元素，途径的祖先节点都会触发对应的事件，如果当前节点的该事件绑定了事件处理函数的话，则会执行该函数当事件达到目标元素并执行绑定函数后，事件又会向上传播到window元素，途径的祖先节点都会触发对应的事件。</p>
-<p>事件流包含三个阶段：<br>事件捕捉阶段<br>处于目标阶段<br>事件冒泡阶段</p>
-<p>事件捕捉阶段：事件开始由顶层对象触发，然后逐级向下传播，直到目标的元素。<br>处于目标函数：处在绑定事件的元素上；<br>事件冒泡阶段：事件由具体的元素先接收，然后逐级向上传播，直到不具体的元素。</p>
-<h4 id="BOM对象有哪些？列举window对象"><a href="#BOM对象有哪些？列举window对象" class="headerlink" title="BOM对象有哪些？列举window对象"></a>BOM对象有哪些？列举window对象</h4><p>window对象是JS的最顶层对象，其他的BOM对象都是window对象的属性。<br>doucument对象 文档对象<br>location对象 浏览器当前url信息<br>nagvigator对象 浏览器本身信息<br>screen对象 客户端屏幕信息<br>history对象 浏览器访问历史信息</p>
-<h4 id="请简述AJAX及基本步骤"><a href="#请简述AJAX及基本步骤" class="headerlink" title="请简述AJAX及基本步骤"></a>请简述AJAX及基本步骤</h4><p>异步JS和XML，是指一种创建交互式网页应用的网页开发技术，通过在后台与服务器进行少量数据交换，AJAX可以使网页实现异步刷新，这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
-<h5 id="基本步骤："><a href="#基本步骤：" class="headerlink" title="基本步骤："></a>基本步骤：</h5><ul>
-<li>初始化AJAX对象</li>
-<li>连接地址，准备数据</li>
-<li>发送请求</li>
-<li>接受数据</li>
-<li>接受数据完成</li>
-</ul>
-<h5 id="HTTP状态信息含义"><a href="#HTTP状态信息含义" class="headerlink" title="HTTP状态信息含义"></a>HTTP状态信息含义</h5><p>200 请求成功<br>302 临时重定向<br>304<br>403<br>404 请求失败<br>500 无法完成对请求的处理</p>
-<h5 id="同步和异步的区别"><a href="#同步和异步的区别" class="headerlink" title="同步和异步的区别"></a>同步和异步的区别</h5><p>首先同步异步与阻塞非阻塞并没有关系。同步异步主要是事情做完以后，如何进行处理，或者说关注的是一种消息通信机制。<br>同步的情况下，是由处理消息者自己去等待消息是否被触发<br>异步的情况下是由触发机制来通知处理消息者</p>
-<h5 id="GET和POST的区别"><a href="#GET和POST的区别" class="headerlink" title="GET和POST的区别"></a>GET和POST的区别</h5><p>GET一般用于查询数据，使用url传递参数，由于浏览器对地址长度有限制，所以对使用get方式所发送信息的数量有限制，同时浏览器会记录（历史记录、缓存）中会保留请求地址的信息，包括地址后面的数据。get只能发送普通格式的数据<br>POST一般向服务器发送数据，对所发送的数据的大小理论上是没有限制的，浏览器会缓存记录地址，但是不会记录post提交的数据</p>
-<h5 id="AJAX的局限性"><a href="#AJAX的局限性" class="headerlink" title="AJAX的局限性"></a>AJAX的局限性</h5><p>AJAX不支持浏览器back按钮<br>安全问题AJAX暴露了与服务器交互的细节<br>对搜索引擎的支持比较弱，不会执行你的JS脚本，只会操作你的网页源代码<br>跨域请求有一定限制，解决方式：jsonp</p>
-<h4 id="new-操作符具体干了什么？"><a href="#new-操作符具体干了什么？" class="headerlink" title="new 操作符具体干了什么？"></a>new 操作符具体干了什么？</h4><p>当使用new操作符调用构造函数，函数实际会经历如下步骤：</p>
-<ul>
-<li>创建一个新对象</li>
-<li>把函数中上下文对象的this指向该对象</li>
-<li>执行代码。通过this给新对象添加属性和方法</li>
-<li>返回对象</li>
-</ul>
-<h4 id="null和undefined区别"><a href="#null和undefined区别" class="headerlink" title="null和undefined区别"></a>null和undefined区别</h4><p>null：表示空值。转为数值时为0；<br>undefined：表示缺少值。就是此处应该有一个值，但是还没有定义</p>
-<ul>
-<li>变量声明了，但没有赋值时，就等于undefined</li>
-<li>对象没有赋值的属性，该属性的值为undefined</li>
-<li>函数没有返回值时，默认返回undefiend</li>
-</ul>
-<h4 id="JS原型，原型链？有什么特点？"><a href="#JS原型，原型链？有什么特点？" class="headerlink" title="JS原型，原型链？有什么特点？"></a>JS原型，原型链？有什么特点？</h4><p>javaScript原型：每创建一个函数，函数上都有一个属性为prototype，它的值是一个对象，这个对象的作用在于当使用函数创建实例的时候，那么这些实例都会共享原型上的属性和方法</p>
-<p>原型链：在JS中，每个对象都有一个指定它的原型对象的内部链接proto。这个原型对象又有自己的原型。直到某个对象的原型为null为止，这种一级一级的链结构称为原型链<br>当查找一个对象的属性时，JS会向上遍历原型链，直到找到给定名称的属性为止，到查找到原型链的顶部。仍然没有找到指定的属性，就会返回undefined</p>
-<h4 id="实现对数组进行乱序"><a href="#实现对数组进行乱序" class="headerlink" title="实现对数组进行乱序"></a>实现对数组进行乱序</h4><p>数组sort()和Math.random();</p>
-<h4 id="JS中this的常见用法："><a href="#JS中this的常见用法：" class="headerlink" title="JS中this的常见用法："></a>JS中this的常见用法：</h4><p>我们研究的this一般是指函数中的this，在全局作用域下打印this就是window</p>
-<ol>
-<li>在绑定事件的时候，事件触发执行执行的函数中的this就是触发事件的主体</li>
-<li>函数中的this是谁，就看函数在执行的时候调用函数的主体就是函数中的this。==》函数在执行的时候，就看点前面是谁，函数中的this就是谁。如果没有就是window，函数中的this是谁只有在函数执行的时候才知道。</li>
-<li>自执行函数中的this永远是window</li>
-<li>构造函数中的this是当前实例</li>
-<li>call和apply可以强制改变this<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4></li>
-</ol>
-<ul>
-<li>单例模式（其实就是一个对象）：也可以叫做命名空间</li>
-<li>工厂模式（就是一个函数）：因为是工厂，这个工厂函数我需要运行结束后返回一个对象。我们在写工厂模式的过程其实就是函数的封装过程。</li>
-<li>构造函数（实例 类 的概念）：就是声明了一个类，但是只有运行的时候才知道运行方式。构造函数会默认返回一个实例，构造函数中的this都是当前实例</li>
-<li>原型模式：<ol>
-<li>任何一个对象数据类型都会有一个天生自带的属性叫做_ <em>proto</em> _</li>
-<li>任何一个函数数据类型不仅仅有_ <em>proto</em> <em>，还有一个prototype，这个prototype就叫原型，并且这个prototype的属性值仍然是一个对象数据类型的，并且包含两个天生属性，一个是constructor,另外一个是 </em> <em>proto </em> _</li>
-<li>任何实例（对象数据类型）都天生自带一个属性叫做_ <em>proto </em> _ ，这个属性值是这个实例所属于那个类的原型</li>
-<li>定义在原型上的任何方法和属性都是公有的，任何一个实例都天生自带原型上的公有属性，这个原型可以通过实例 _ <em>proto </em> _属性访问，也可以通过l类的prototype访问</li>
-</ol>
-</li>
-</ul>
-<h4 id="前端页面由哪三层构成，每层作用是什么？"><a href="#前端页面由哪三层构成，每层作用是什么？" class="headerlink" title="前端页面由哪三层构成，每层作用是什么？"></a>前端页面由哪三层构成，每层作用是什么？</h4><ul>
-<li>结构层：<br>由html或xhtml之类的标记语言负责创建。标签，也就是那些出现在尖括号里的单词，对网页内容的语义含义做出了描述，但这些标签不包含任何关于“如何显示有关内容”的信息</li>
-<li>表示层：<br>由CSS负责创建，css对如何显示有关内容的问题做出了回答。</li>
-<li>行为层：<br>负责回答内容应该如何对事件做出反应这一问题，这是JS语言和DOM主宰的领域。</li>
-</ul>
-<h4 id="如何让一段文本中所有英文单词的首字母大写？"><a href="#如何让一段文本中所有英文单词的首字母大写？" class="headerlink" title="如何让一段文本中所有英文单词的首字母大写？"></a>如何让一段文本中所有英文单词的首字母大写？</h4><p>在css中有个text-transform属性，选用capitalize值。<br>ps：none什么也不选<br>       uppercase转为大写<br>       lowercase转为小写</p>
-<h4 id="判断行内元素还是块级元素标准有两个："><a href="#判断行内元素还是块级元素标准有两个：" class="headerlink" title="判断行内元素还是块级元素标准有两个："></a>判断行内元素还是块级元素标准有两个：</h4><ol>
-<li>是否独占一行</li>
-<li>是否可以单独为元素设置高度和宽度</li>
-</ol>
-<h4 id="html5新增哪些内容？"><a href="#html5新增哪些内容？" class="headerlink" title="html5新增哪些内容？"></a>html5新增哪些内容？</h4><ol>
-<li>新增语义化标签</li>
-<li>多媒体标签、audio video</li>
-<li>canvas</li>
-<li>表单提交增加属性</li>
-</ol>
-
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/08/hello-world/" data-id="cj4ujxj6q0000k4u67l0yoinp" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/07/08/hello-world/" data-id="cj4uk30b60000gou6s065608f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +114,7 @@ DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
     </div>
@@ -234,12 +124,12 @@ DOM、BOM、内存泄漏、跨域、异步装载、模板引擎、前端MVC、�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/07/08/hello-world/">blog</a>
+            <a href="/2017/07/08/hello-world/">知识点总结</a>
           </li>
         
       </ul>
